@@ -7,12 +7,12 @@
     <h1>Coding Forms!</h1>
     <form action="http://www.example.com/">
       <div>
-        <label for="email">Email</br></label>
-        <input type="text" name="email">
+        <label for="email-address">Email</br></label>
+        <input name="email" id="email-address">
       </div>
       <div>
         <label for="choices">Why is Coding cool?</br></label>
-        <select name="choices">
+        <select name="choices" id="choices">
           <option value="interesting">Because its interesting</option>
           <option value="fun">Because its fun</option>
           <option value="powerful">Because its powerful</option>
@@ -22,11 +22,14 @@
       <div>
         <label for="favorite-language">Favorite Language (choose one)</br></label>
       </br>
+        <!-- needs their own label --->
         <input type="radio" name="language" value="HTML"/
         checked="HTML">
         HTML
+        <!-- needs their own label --->
         <input type="radio" name="language" value="CSS" />
         CSS
+        <!-- needs their own label --->
         <input type="radio" name="language" value="Javascript" />
         Javascript
       </div>
@@ -34,12 +37,12 @@
       <div>
         <label for="information">Would you like to sign up for more information?</br></label>
       </br>
-        <input type="checkbox" name="subscribe" value="Sign me up!"/>
+        <input type="checkbox" name="subscribe" id="information" value="Sign me up!"/>
         Sign me up!
       </div>
       <div>
         <label for="comments">Comments</br></label>
-        <textarea name="comments" cols="30" rows="10"></textarea>
+        <textarea id="comments" cols="30" rows="10"></textarea>
       </br>
         <input type="submit" name="submit" value="Submit"/>
       </div>
