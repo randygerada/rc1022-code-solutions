@@ -5,14 +5,15 @@
   </head>
   <body>
     <h1>Coding Forms!</h1>
-    <form action="http://www.example.com/">
+    <form>
       <div>
         <label for="email-address">Email</br></label>
-        <input name="email" id="email-address">
+        <input name="email" type="email" id="email-address">
       </div>
       <div>
         <label for="choices">Why is Coding cool?</br></label>
         <select name="choice" id="choices">
+          <option value="">Select an option</option>
           <option value="interesting">Because its interesting</option>
           <option value="fun">Because its fun</option>
           <option value="powerful">Because its powerful</option>
@@ -20,18 +21,19 @@
       </div>
     </br>
       <div>
-        <label for="favorite-language">Favorite Language (choose one)</br></label>
-      </br>
-        <!-- needs their own label --->
-        <input type="radio" name="language" value="HTML"/
-        checked="HTML">
-        HTML
-        <!-- needs their own label --->
-        <input type="radio" name="language" value="CSS" />
-        CSS
-        <!-- needs their own label --->
-        <input type="radio" name="language" value="Javascript" />
-        Javascript
+        <p>Favorite Language (Choose One)</p>
+        <label>
+          <input id="html" type="radio" name="language" value="HTML"/>
+          HTML
+        </label>
+        <label>
+          <input id="css" type="radio" name="language" value="CSS" />
+          CSS
+        </label>
+        <label>
+          <input id="javascript" type="radio" name="language" value="Javascript" />
+          Javascript
+        </label>
       </div>
     </br>
       <div>
@@ -41,8 +43,8 @@
         Sign me up!
       </div>
       <div>
-        <label for="comments">Comments</br></label>
-        <textarea id="comments" cols="30" rows="10"></textarea>
+        <label for="commentsBox">Comments</br></label>
+        <textarea name="comments" id="commentsBox" cols="30" rows="10"></textarea>
       </br>
         <input type="submit" name="submit" value="Submit"/>
       </div>
