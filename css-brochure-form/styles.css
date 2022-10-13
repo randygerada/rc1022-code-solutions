@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  position: relative;
+  left: 290px;
+  color: rgb(224 60 14);
+  letter-spacing: 3px;
+  font-size: 20px;
+}
+
+input {
+  height: 40px;
+  width: 450px;
+  position: relative;
+  left: 150px;
+  margin-bottom: 16px;
+  border-radius: 5px;
+  border-color: rgb(236 232 232);
+}
+
+label {
+  position: relative;
+  left: 154px;
+  font-size: 10px;
+}
+
+select {
+  height: 40px;
+  width: 450px;
+  position: relative;
+  left: 150px;
+  background-color: rgb(240 240 240);
+  border-radius: 5px;
+}
+
+button {
+  position: relative;
+  left: 520px;
+  margin-top: 10px;
+  border-radius: 20px;
+  background-color: rgb(224 60 14);
+  color: white;
+  border: rgb(224 60 14);
+  padding: 8px 15px;
+}
