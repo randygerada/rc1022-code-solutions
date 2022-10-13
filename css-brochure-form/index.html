@@ -10,36 +10,35 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1></h1>
-  <h2>LEARN MORE</h2>
-
-
-  <form>
-    <div>
+  <main>
+    <h1>LEARN MORE</h1>
+    <form>
       <div>
-        <label for="email-address">COMPANY EMAIL</label>
+        <div>
+          <label for="email-address">COMPANY EMAIL</label>
+        </div>
+        <div>
+          <input id="email-address" name="email" type="email" placeholder="sally@company.co">
+        </div>
+        <label for="fullName">NAME</label>
+        <div>
+          <input id="fullName" name="name" type="text" placeholder="Sally Smith">
+        </div>
+        <label for="where-hiring">WHERE ARE YOU HIRING</label>
+        <div>
+          <input id="where-hiring" name="whereHiring" type="text" placeholder="City,Country">
+        </div>
+        <label for="engineersHiing"> HOW MANY ENGINEERS ARE YOU HIRING IN THE NEXT 6 MONTHS?</label>
+        <div>
+          <select name="engineers" id="hiringHowMany">
+            <option value="aCouple">1-2 Engineers</option>
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+        </div>
       </div>
-      <div>
-        <input id="email-address" name="email" type="email" placeholder="sally@company.co">
-      </div>
-      <label for="fullName">NAME</label>
-      <div>
-        <input id="fullName" name="name" type="text" placeholder="Sally Smith">
-      </div>
-      <label for="where-hiring">WHERE ARE YOU HIRING</label>
-      <div>
-        <input id="where-hiring" name="whereHiring" type="text" placeholder="City,Country">
-      </div>
-      <label for="engineersHiing"> HOW MANY ENGINEERS ARE YOU HIRING IN THE NEXT 6 MONTHS?</label>
-      <div>
-        <select name="engineers" id="hiringHowMany">
-          <option value="aCouple">1-2 Engineers</option>
-          <option value=""></option>
-          <option value=""></option>
-        </select>
-      </div>
-    </div>
-    <button>SUBMIT</button>
-  </form>
+      <button>SUBMIT</button>
+    </form>
+  </main>
 </body>
 </html>
