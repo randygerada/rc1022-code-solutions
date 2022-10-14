@@ -40,6 +40,6 @@
 
   /* your code here */
   position: absolute;
-  bottom: 2px;
-  top: 10px;
+  height: 100%;
+  width: 100%;
 }
