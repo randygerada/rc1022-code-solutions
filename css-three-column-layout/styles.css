@@ -22,18 +22,19 @@ body {
 
 .column-third {
   flex-basis: calc(100%/3);
-  margin: 30px;
-  padding: 20px;
 }
 
 .character {
-  max-width: 100%;
+  width: 100%;
 }
 
-/* .three-columns {
-  flex-basis: calc(100%/3);
+.resize {
+  background-color: white;
+  padding: 60px;
+  margin: 70px;
+  display: flex;
+  border-radius: 200px;
 }
-*/
 
 h1,
 h2,
@@ -45,21 +46,4 @@ p {
 h1 {
   font-size: 24px;
   padding-top: 60px;
-}
-
-/*
-.column-third {
-  flex-basis: calc(100%/3);
-  background-color: white;
-  border-radius: 250px;
-  padding: 40px;
-  margin: 60px;
-}
-*/
-
-.column-third > .character {
-  padding: 40px;
-  margin: 10px;
-  background-color: white;
-  border-radius: 100px;
 }
