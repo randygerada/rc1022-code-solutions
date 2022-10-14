@@ -22,19 +22,18 @@ body {
 
 .column-third {
   flex-basis: calc(100%/3);
-  background-color: white;
-  border-radius: 250px;
-  padding: 40px;
-  margin: 60px;
+  margin: 30px;
+  padding: 20px;
 }
 
 .character {
-  width: 100%;
+  max-width: 100%;
 }
 
-.three-columns {
-  flex-basis: 100%;
+/* .three-columns {
+  flex-basis: calc(100%/3);
 }
+*/
 
 h1,
 h2,
@@ -57,3 +56,10 @@ h1 {
   margin: 60px;
 }
 */
+
+.column-third > .character {
+  padding: 40px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 100px;
+}
