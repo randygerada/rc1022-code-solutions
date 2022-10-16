@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap" rel="stylesheet">
   <title>CSS Challenge - Two Column Layout</title>
   <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="reset.css">
@@ -11,15 +12,63 @@
 </head>
 <body>
   <header>
-    <div class="title">
-      <h1>SCALE, SPEED, AGILITY</h1>
-    </div>
-    <div class="statement">
-      <h3>We've dedicated thousands of man hours to making healthcare institutions in the Helium
-        network run 10x more efficiently and deliver an unparalled quality of care.
-      </h3>
-    </div>
+    <h1>SCALE, SPEED, AGILITY</h1>
+    <h4>We've dedicated thousands of man hours to making healthcare institutions in the Helium<br>
+    </br>network run 10x more efficiently and deliver an unparalled quality of care.
+    </h4>
   </header>
+  <main class="contents">
+    <div class="row">
+      <div class="column">
+        <img class="logo" src="images/software.svg" alt="software" width="100" height="100">
+        <div class="text-info">
+          <h3>INTUITIVE, </br> SMART, SOFTWARE</h3>
+          <p>
+            We build products that transform how healthcare facilities run across Afria - making
+            them radically more efficient operationally and financially, a completed turnaround.
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <img class="logo" src="images/practice.svg" alt="software" width="100" height="100">
+        <div class="text-info">
+          <h3>PRACTICE MEDICINE, NOT ADMINISTRATION</h3>
+          <p>
+            Our all-in-one electronic health records (EHR), hospital management (HMIS)
+            &amp; billing system helps streamline your facility, reduce waste and improve
+            quality of care.
+          </p>
+        </div>
+      </div>
+    </div>
 
+    <div class="row">
+      <div class="column">
+        <img class="logo" src="images/circumstance.svg" width="100" height="100">
+        <div class="text-info">
+          <h3>FOR ANY CIRCUMSTANCE</h3>
+          <p>
+            Our intuitive system is build around the peculiarities of your facility; we support
+            offline deployments, sync to the cloud and run on any device 24/7.
+          </p>
+        </div>
+      </div>
+
+      <div class="column">
+        <img class="logo" src="images/data.svg" width="100" height="100" >
+        <div class="text-info">
+          <h3>DATA THAT TRANSFORMS</h3>
+          <p>
+            We understand your facility better than you do; we provide visually-appealing
+            real-time analytics, reports and trends at your finger tips.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <footer>
+    <button class="btn" style="color:rgb(176 49 3);">LEARN MORE</button>
+  </footer>
 </body>
 </html>
