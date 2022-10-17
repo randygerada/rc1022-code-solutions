@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+/* title and nav */
+.header {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav a {
+  padding: 0 20px;
+  text-decoration: none;
+  color: grey;
+}
+
+.canvas-blue {
+  width: 150px;
+}
+
+a.contact-btn {
+  background-color: #313f60;
+  color: #fff;
+  border-radius: 4px;
+  padding: 7px 10px;
+}
+
+/* 2nd conatainer */
+.hero {
+  /*
+  background-color: #c5cae9; */
+  padding: 60px 45px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+/* sets text content to merge with full-image */
+.hero-info {
+  max-width: 450px;
+  position: absolute;
+  left: 25%;
+  top: 25%;
+}
+
+.hero-info h1 {
+  color: white;
+}
+
+.hero-info p {
+  color: white;
+  line-height: 2;
+}
+
+/* get-started button for all */
+a.get-start-btn {
+  background-color: #313f60;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 40px;
+  border-radius: 4px;
+  font-size: 1.18rem;
+  display: inline-block;
+}
+
+/* img resize */
+.full-image {
+  width: 1200px;
+  height: 600px;
+}
+
+/* 3rd Container */
+.canvas-users {
+  background-color: rgb(248 248 248);
+  padding: 60px 45px;
+  margin: 0 100px;
+  color: gray;
+}
+
+.clinic-title {
+  max-width: 450px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.list-container {
+  display: flex;
+  padding: 60px;
+}
+
+.clinic-list {
+  list-style-type: none;
+  margin: 0 auto;
+}
+
+.clinic-list li {
+  font-size: 20px;
+  line-height: 3;
+}
+
+/* 4th container */
+
+.learn-more {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 100px 0;
+}
+
+/* 5th Container */
+.canvas-address {
+  height: 300px;
+  background-color: rgb(153 152 152);
+  display: flex;
+  align-items: center;
+}
+
+.name-address p {
+  width: 400px;
+}
+
+.canvas-img-white {
+  width: 150px;
+}
+
+.canvas-links {
+  display: flex;
+}
+
+.c-link {
+  list-style-type: none;
+}
+
+.c-link a {
+  text-decoration: none;
+}
