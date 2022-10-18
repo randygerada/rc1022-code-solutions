@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+}
+
 /* title and nav */
 .header {
   height: 100px;
@@ -36,10 +40,10 @@ a.contact-btn {
 .hero {
   /*
   background-color: #c5cae9; */
-  padding: 60px 45px;
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 /* sets text content to merge with full-image */
@@ -72,8 +76,8 @@ a.get-start-btn {
 
 /* img resize */
 .full-image {
-  width: 1200px;
-  height: 600px;
+  max-width: 1200px;
+  max-height: 600px;
 }
 
 /* 3rd Container */
@@ -88,11 +92,11 @@ a.get-start-btn {
   max-width: 450px;
   margin: 0 auto;
   text-align: center;
+  height: 200px;
 }
 
 .list-container {
   display: flex;
-  padding: 60px;
 }
 
 .clinic-list {
@@ -108,11 +112,10 @@ a.get-start-btn {
 /* 4th container */
 
 .learn-more {
-  height: 100px;
+  height: 200px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 100px 0;
 }
 
 /* 5th Container */
@@ -121,6 +124,7 @@ a.get-start-btn {
   background-color: rgb(153 152 152);
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
 .name-address p {
@@ -131,14 +135,12 @@ a.get-start-btn {
   width: 150px;
 }
 
-.canvas-links {
-  display: flex;
-}
-
 .c-link {
   list-style-type: none;
+  line-height: 2;
 }
 
 .c-link a {
   text-decoration: none;
+  color: black;
 }
