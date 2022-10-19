@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.screens {
+  display: flex;
+}
+
+img {
+  width: 500px;
+}
+
+.first-screen {
+  max-width: 60%;
+  display: flex;
+}
+
+.icon {
+  max-width: 20%;
+}
+
+h1 {
+  height: 50px;
+  text-align: center;
+}
