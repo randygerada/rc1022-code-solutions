@@ -3,7 +3,7 @@
 }
 
 body {
-  margin: 0;
+  font-family: Mukta, sans-serif;
 }
 
 /* title and nav */
@@ -44,6 +44,7 @@ a.contact-btn {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 50px;
 }
 
 /* sets text content to merge with full-image */
@@ -51,7 +52,6 @@ a.contact-btn {
   max-width: 450px;
   position: absolute;
   left: 25%;
-  top: 25%;
 }
 
 .hero-info h1 {
@@ -82,17 +82,19 @@ a.get-start-btn {
 
 /* 3rd Container */
 .canvas-users {
+  width: 90%;
   background-color: rgb(248 248 248);
-  padding: 60px 45px;
-  margin: 0 100px;
   color: gray;
+  margin: 0 auto;
+  height: 500px;
+  padding: 40px;
 }
 
 .clinic-title {
   max-width: 450px;
   margin: 0 auto;
   text-align: center;
-  height: 200px;
+  padding-bottom: 40px;
 }
 
 .list-container {
@@ -118,17 +120,29 @@ a.get-start-btn {
   align-items: center;
 }
 
+.ready {
+  flex-basis: 30%;
+}
+
 /* 5th Container */
 .canvas-address {
-  height: 300px;
+  height: 500px;
+  width: 90%;
   background-color: rgb(153 152 152);
   display: flex;
-  align-items: center;
   justify-content: space-around;
+  margin: 0 auto;
+  align-items: center;
+  color: white;
+}
+
+.name-address {
+  flex-basis: calc(100%/3);
 }
 
 .name-address p {
-  width: 400px;
+  width: 450px;
+  font-size: 15px;
 }
 
 .canvas-img-white {
@@ -137,10 +151,37 @@ a.get-start-btn {
 
 .c-link {
   list-style-type: none;
-  line-height: 2;
+  flex-basis: calc(100%/5);
+  padding: 40px 0;
+  font-size: 22px;
 }
 
 .c-link a {
   text-decoration: none;
-  color: black;
+  color: white;
+  line-height: 2;
+}
+
+.end-of-page {
+  width: 90%;
+  background-color: rgb(225 225 225);
+  margin: 0 auto;
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.privacy {
+  flex-basis: calc(100%/6);
+  padding: 0 65px;
+}
+
+.privacy a {
+  text-decoration: none;
+  color: rgb(94 94 94);
+}
+
+.contact-us a {
+  text-decoration: none;
+  color: rgb(94 94 94);
 }
