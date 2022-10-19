@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Mukta, sans-serif;
+}
+
+/* title and nav */
+.header {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav a {
+  padding: 0 20px;
+  text-decoration: none;
+  color: grey;
+}
+
+.canvas-blue {
+  width: 150px;
+}
+
+a.contact-btn {
+  background-color: #313f60;
+  color: #fff;
+  border-radius: 4px;
+  padding: 7px 10px;
+}
+
+/* 2nd conatainer */
+.hero {
+  /*
+  background-color: #c5cae9; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+/* sets text content to merge with full-image */
+.hero-info {
+  max-width: 450px;
+  position: absolute;
+  left: 25%;
+}
+
+.hero-info h1 {
+  color: white;
+}
+
+.hero-info p {
+  color: white;
+  line-height: 2;
+}
+
+/* get-started button for all */
+a.get-start-btn {
+  background-color: #313f60;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 40px;
+  border-radius: 4px;
+  font-size: 1.18rem;
+  display: inline-block;
+}
+
+/* img resize */
+.full-image {
+  max-width: 1200px;
+  max-height: 600px;
+}
+
+/* 3rd Container */
+.canvas-users {
+  width: 90%;
+  background-color: rgb(248 248 248);
+  color: gray;
+  margin: 0 auto;
+  height: 500px;
+  padding: 40px;
+}
+
+.clinic-title {
+  max-width: 450px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.list-container {
+  display: flex;
+}
+
+.clinic-list {
+  list-style-type: none;
+  margin: 0 auto;
+}
+
+.clinic-list li {
+  font-size: 20px;
+  line-height: 3;
+}
+
+/* 4th container */
+
+.learn-more {
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ready {
+  flex-basis: 30%;
+}
+
+/* 5th Container */
+.canvas-address {
+  height: 500px;
+  width: 90%;
+  background-color: rgb(153 152 152);
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  align-items: center;
+  color: white;
+}
+
+.name-address {
+  flex-basis: calc(100%/3);
+}
+
+.name-address p {
+  width: 450px;
+  font-size: 15px;
+}
+
+.canvas-img-white {
+  width: 150px;
+}
+
+.c-link {
+  list-style-type: none;
+  flex-basis: calc(100%/5);
+  padding: 40px 0;
+  font-size: 22px;
+}
+
+.c-link a {
+  text-decoration: none;
+  color: white;
+  line-height: 2;
+}
+
+.end-of-page {
+  width: 90%;
+  background-color: rgb(225 225 225);
+  margin: 0 auto;
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.privacy {
+  flex-basis: calc(100%/6);
+  padding: 0 65px;
+}
+
+.privacy a {
+  text-decoration: none;
+  color: rgb(94 94 94);
+}
+
+.contact-us a {
+  text-decoration: none;
+  color: rgb(94 94 94);
+}
