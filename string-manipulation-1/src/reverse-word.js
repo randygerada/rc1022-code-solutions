@@ -12,3 +12,6 @@ function reverseWord(word) {
   }
   return newWord;
 }
+
+// declared a new variable of newWord and gave it the value of an empty string.
+// within code block word[i] is being concatenated to newWord
