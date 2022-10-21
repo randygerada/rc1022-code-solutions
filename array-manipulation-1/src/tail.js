@@ -5,8 +5,8 @@
 
 function tail(array) {
   var emptyArray = [];
-  for (var i = 0; i < array.length; i++) {
-    array[i] = array[array.lenth - 1];
+  for (var i = 0; i < array.length - 1; i++) {
+    array[i] = array[i + 1];
     emptyArray.push(array[i]);
   }
   return emptyArray;
