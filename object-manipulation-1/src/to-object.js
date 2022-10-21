@@ -11,3 +11,10 @@ function toObject(keyValuePair) {
   }
   return emptyObj;
 }
+
+// called for an empty object
+
+// use array length as conditional
+
+// first index of keyValuePair the result of that is being added to the emptyObj object
+// [keyValuePair[i - 1]] is 0-1 = -1
