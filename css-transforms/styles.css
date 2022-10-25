@@ -17,18 +17,18 @@ body {
   text-align: center;
 }
 
-.pokeball-wrapper:first-child {
-  transform: rotate(-30deg);
-}
-
-.pokeball-wrapper:last-child {
-  transform: rotate(30deg);
-}
-
 img.pokeball {
   max-width: 100px;
   margin: 0 auto 1rem;
   display: block;
+}
+
+.pokeball-wrapper:first-child > img.pokeball {
+  transform: rotate(-30deg);
+}
+
+.pokeball-wrapper:last-child > img.pokeball {
+  transform: rotate(30deg);
 }
 
 button {
