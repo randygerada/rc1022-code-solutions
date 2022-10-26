@@ -16,5 +16,6 @@ function getFormValues(event) {
   };
 
   console.log('messageData: ', newObj);
+  document.getElementById('contact-form').reset();
 
 }
