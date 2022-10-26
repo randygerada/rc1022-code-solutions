@@ -7,12 +7,13 @@
 // possibly use an for loop to go through string?
 
 function ransomCase(string) {
+  var lowerCaseString = string.toLowerCase();
   var emptyString = '';
-  for (var i = 0; i < string.length; i++) {
-    if (string[i] % 2 !== 0) {
-      emptyString += string.charAt(i).toUpperCase();
+  for (var i = 0; i < lowerCaseString.length; i++) {
+    if (i % 2 !== 0) {
+      emptyString += lowerCaseString.charAt(i).toUpperCase();
     } else {
-      emptyString += string.charAt(i);
+      emptyString += lowerCaseString.charAt(i);
     }
   }
   return emptyString;
