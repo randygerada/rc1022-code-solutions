@@ -91,7 +91,7 @@ function renderPokemon(pokemon) {
   return columnThirdDiv;
 }
 
-const $row = document.querySelector('pokemon-card');
+var $row = document.querySelector('pokemon-card');
 
 for (var i = 0; i < pokedex.length; i++) {
   var createdPokemonCard = renderPokemon(pokedex[i]);
