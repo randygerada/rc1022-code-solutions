@@ -47,3 +47,6 @@ body {
     width: 25%;
   }
 }
+
+/* there will be less width properties,
+px measurement needs to be exact for different devices */
