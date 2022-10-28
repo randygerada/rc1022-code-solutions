@@ -19,10 +19,6 @@
   opacity: 0;
   visibility: hidden;
   transform: scale(1.1);
-  transition:
-    visibility 0s linear 0.25s,
-    opacity 0.25s 0s,
-    transform 9.25s;
 }
 
 .modal-content {
@@ -60,5 +56,4 @@
   opacity: 1;
   visibility: visible;
   transform: scale(1);
-  transition: visibility 0s linear 0s, opacity 0.25s;
 }
