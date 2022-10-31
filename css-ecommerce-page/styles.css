@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+.new-arrivals {
+  padding: 10px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.stock {
+  flex-basis: calc(100%/5);
+}
+
+.items {
+  width: 250px;
+  height: 350px;
+}
+
+p {
+  line-height: 2.5;
+}
+
+span,
+del {
+  color: #bbbaba;
+}
+
+mark {
+  background-color: #f3eee5;
+}
