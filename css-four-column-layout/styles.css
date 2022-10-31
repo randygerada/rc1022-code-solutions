@@ -2,27 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Barlow, sans-serif;
 }
 
 body {
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
   background-color: rgb(232 236 237);
+  font-family: Barlow, sans-serif;
 }
 
 h1 {
   margin: 10px;
-  font-size: 25px;
   font-weight: bolder;
+  text-align: center;
 }
 
 h2 {
   font-size: 15px;
-  text-align: center;
   font-weight: bolder;
   padding: 10px;
 }
@@ -30,12 +25,19 @@ h2 {
 h3 {
   padding: 20px;
   font-size: 12px;
-  text-align: center;
 }
 
-.screens {
+.container {
+  max-width: 75%;
   display: flex;
-  margin: 10px;
+  margin: 0 auto;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: calc(100%/3);
 }
 
 .first-screen {
@@ -44,14 +46,4 @@ h3 {
 
 .icon {
   max-width: 20%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-}
-
-.screen-1,
-.screen-2,
-.screen-3,
-.screen-4 {
-  margin: 10px;
 }
