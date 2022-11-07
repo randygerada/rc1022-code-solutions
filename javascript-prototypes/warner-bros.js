@@ -27,7 +27,5 @@ var warnerProtoType = {
 };
 
 Object.setPrototypeOf(yakko, warnerProtoType);
-
 Object.setPrototypeOf(wakko, warnerProtoType);
-
 Object.setPrototypeOf(dot, warnerProtoType);
