@@ -1,24 +1,24 @@
 
 var anObject = new Object();
-console.log('value of an object: ', anObject);
-console.log('typeof of an object:', typeof anObject);
+console.log('value of anObject: ', anObject);
+console.log('typeof of anObject:', typeof anObject);
 
 var anArray = new Array();
-console.log('value of an array: ', anArray);
-console.log('typeof of an array:', typeof anArray);
+console.log('value of anArray: ', anArray);
+console.log('typeof of anArray:', typeof anArray);
 
 var aFunction = new Function();
-console.log('value of a function: ', aFunction);
-console.log('typeof of a function:', typeof aFunction);
+console.log('value of aFunction: ', aFunction);
+console.log('typeof of aFunction:', typeof aFunction);
 
 var aString = new String();
-console.log('value of a string: ', aString);
-console.log('typeof of a string:', typeof aString);
+console.log('value of aString: ', aString);
+console.log('typeof of aString:', typeof aString);
 
 var aNumber = new Number();
-console.log('value of a number: ', aNumber);
-console.log('typeof of a number:', typeof aNumber);
+console.log('value of aNumber: ', aNumber);
+console.log('typeof of aNumber:', typeof aNumber);
 
 var aBoolean = new Boolean();
-console.log('value of a boolean: ', aBoolean);
-console.log('typeof of a boolean:', typeof aBoolean);
+console.log('value of aBoolean: ', aBoolean);
+console.log('typeof of aBoolean:', typeof aBoolean);
