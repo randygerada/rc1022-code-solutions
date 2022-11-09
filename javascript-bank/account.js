@@ -6,6 +6,7 @@ function Account(number, holder) {
   this.transactions = [];
 }
 
+// creating a method.
 Account.prototype.deposit = function (amount) {
   if (Number.isInteger(amount) && amount > 0) {
     var depositAmount = new Transaction('deposit', amount);
