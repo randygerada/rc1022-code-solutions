@@ -4,8 +4,6 @@ const fs = require('fs');
 
 const app = express();
 
-/* get request list of notes */
-
 
 app.get('/api/notes', (req, res)=> {
   const notesArray = [];
@@ -15,8 +13,6 @@ app.get('/api/notes', (req, res)=> {
   res.send(notesArray);
 });
 
-
-/*Get a single note id */
 
 app.get('/api/notes/:id', (req, res) => {
   const id = Number(req.params.id);
@@ -47,7 +43,7 @@ const invalidContent = {
   "error": "An unexpected error has occured."
 }
 
-/* post request */
+
   app.post('/api/notes', (req, res, err) => {
     if (!req.body.content){
       res.status(400).json(noContent);
@@ -97,7 +93,27 @@ app.delete('/api/notes/:id', (req, res) => {
     });
 });
 
+app.put('/api/notes/:id', (req,res) => {
+  const id = Number(req.params.id);
+  const errorString = {
+    "error": 'id must have a positive integer',
+  }
+  const errorInvalidNumber = {
+    "error": `cannot find note with id ${id}`
+  }
+  if (id >= 0 && !json.notes[id]) {
+    res.status(404).json(errorInvalidNumber)
+    return;
+  }
+  if (!json.notes[id]) {
+    res.status(400).json(errorString);
+    return;
+  }
+
+});
+
 
   app.listen(3000, ()=> {
+    // eslint-disable-next-line no-console
     console.log('Listening to port 3000');
   });
