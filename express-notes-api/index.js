@@ -95,7 +95,6 @@ app.delete('/api/notes/:id', (req, res) => {
         res.status(204).json(req.body);
       }
     });
-
 });
 
 
