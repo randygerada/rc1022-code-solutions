@@ -101,13 +101,31 @@ app.put('/api/notes/:id', (req,res) => {
   const errorInvalidNumber = {
     "error": `cannot find note with id ${id}`
   }
-  if (id >= 0 && !json.notes[id]) {
-    res.status(404).json(errorInvalidNumber)
-    return;
-  }
-  if (!json.notes[id]) {
+  if (id <= 0 || !json.notes[id] ) {
     res.status(400).json(errorString);
     return;
+  }
+  if (!req.body.content) {
+    res.status(400).json(noContent);
+    return;
+  }
+
+  if(id > 0 && req.body.content) {
+    if(!json.notes[id]) {
+      res.status(404).json(errorInvalidNumber);
+      return;
+    }
+  } else if (json.notes[id]){
+    req.body.id = Number(id);
+    json.notes[id] = req.body;
+    fs.writeFile('data.json', JSON.stringify(json, null, 2), 'utf8', err => {
+      if (err) {
+        console.error(err);
+        res.status(500).json(invalidContent);
+      } else {
+        res.status(204).json(req.body);
+      }
+    });
   }
 
 });
