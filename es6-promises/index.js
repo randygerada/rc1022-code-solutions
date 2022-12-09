@@ -2,8 +2,8 @@ const takeAChance = require('./take-a-chance');
 
 const newObj = takeAChance('Randy');
 
-newObj.then((message) => {
+newObj.then(message => {
   console.log(message);
-}).catch((message) => {
-  console.error(message);
+}).catch(error => {
+  console.error(error.message);
 });
