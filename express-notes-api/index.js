@@ -94,15 +94,9 @@ app.delete('/api/notes/:id', (req, res) => {
 });
 
 app.put('/api/notes/:id', (req,res) => {
-  const id = Number(req.params.id);
-  const errorString = {
-    "error": 'id must have a positive integer',
-  }
-  const errorInvalidNumber = {
-    "error": `cannot find note with id ${id}`
-  }
-  if (id <= 0 || !json.notes[id] ) {
-    res.status(400).json(errorString);
+  const number = Math.floor(req.params.id);
+  if (req.params.id <= 0 || Number.isInteger(number) === false) {
+    res.status(400).json({  error: 'id must have a positive integer'});
     return;
   }
   if (!req.body.content) {
@@ -110,24 +104,23 @@ app.put('/api/notes/:id', (req,res) => {
     return;
   }
 
-  if(id > 0 && req.body.content) {
-    if(!json.notes[id]) {
-      res.status(404).json(errorInvalidNumber);
+  if( req.params.id > 0 && req.body.content) {
+    if(!json.notes[req.params.id]) {
+      res.status(404).json({ error: 'cannot find note with id ' + req.params.id });
       return;
-    }
-  } else if (json.notes[id]){
-    req.body.id = Number(id);
-    json.notes[id] = req.body;
+    } else if (json.notes[req.params.id]) {
+    req.body.id = Number(req.params.id);
+    json.notes[req.params.id] = req.body;
     fs.writeFile('data.json', JSON.stringify(json, null, 2), 'utf8', err => {
       if (err) {
         console.error(err);
         res.status(500).json(invalidContent);
       } else {
-        res.status(204).json(req.body);
+        res.status(200).json(req.body);
       }
     });
   }
-
+ }
 });
 
 
