@@ -23,7 +23,6 @@ class CustomButton extends React.Component {
   }
 }
 
-
  const container = document.querySelector('#root');
  const root = ReactDOM.createRoot(container);
 
