@@ -1,0 +1,32 @@
+.button {
+  width: 100px;
+  height: 35px;
+  color: white;
+}
+
+.one {
+  background-color: #5d065d;
+}
+
+.two {
+  background-color: purple;
+}
+
+.three {
+  background-color: #eb516b;
+}
+
+.four {
+  background-color: orange;
+  color: black;
+}
+
+.five {
+  background-color: yellow;
+  color: black;
+}
+
+.six {
+  background-color: white;
+  color: black;
+}
