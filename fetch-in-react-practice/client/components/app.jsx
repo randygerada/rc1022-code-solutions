@@ -16,10 +16,7 @@ export default class App extends React.Component {
   componentDidMount() {
     fetch('/api/todos')
       .then(response => response.json())
-      .then(todos => {
-        this.setState({ todos: todos });
-      })
-      .catch(error => console.error(error));
+      .then(todos => this.setState({ todos }))
     /**
      * Use fetch to send a GET request to `/api/todos`.
      * Then 😉, once the response JSON is received and parsed,
@@ -28,20 +25,19 @@ export default class App extends React.Component {
   }
 
   addTodo(newTodo) {
-
     fetch('/api/todos', {
       method: 'POST',
+      body: JSON.stringify(newTodo),
       headers: {
         'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(newTodo)
+      }
     })
       .then(response => response.json())
       .then(todo => {
-        const todos = this.state.todos.concat(todo);
-        this.setState({ todos: todos });
-      })
-      .catch(error => console.error(error));
+        const newTodos = this.state.todos.concat(todo);
+        this.setState({ todos: newTodos });
+      });
+
     /**
     * Use fetch to send a POST request to `/api/todos`.
     * Then 😉, once the response JSON is received and parsed,
